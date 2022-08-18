@@ -9,13 +9,13 @@ def main():
         s.bind((HOST, PORT))
         s.listen()
         conn, addr = s.accept()
-        with conn:
-            print(f"Connected by {addr}")
-            while True:
-                data = conn.recv(1024)
-                if not data:
-                    break
-                conn.sendall(data)
+        print(f"Server connected by {addr}")
+        while True:
+            data = conn.recv(1024)
+            if not data:
+                break
+            conn.sendall(data)
+            print(f"Server received from Client: {data}")
 
 
 if __name__ == '__main__':
