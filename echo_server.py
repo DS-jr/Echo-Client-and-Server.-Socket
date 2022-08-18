@@ -8,6 +8,7 @@ def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: # AF_INET is the Internet address family for IPv4. SOCK_STREAM is the socket type for TCP
         s.bind((HOST, PORT))
         s.listen()
+        print('Server started')
         conn, addr = s.accept()
         print(f"Server connected by {addr}")
         while True:
