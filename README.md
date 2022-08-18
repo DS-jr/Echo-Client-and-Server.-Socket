@@ -1,1 +1,1 @@
-Server echoes back to the Client whatever it receives
+Server gets messages from Client & echoes them back
