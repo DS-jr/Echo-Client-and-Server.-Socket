@@ -1,7 +1,7 @@
 import socket
 
 HOST = "127.0.0.1"  # Localhost
-PORT = 5432  # Port to listen 
+PORT = 54310  # Port to listen 
 
 
 def main():
